@@ -192,6 +192,8 @@ setinnerText('DiscountPrice',sum)
 function TicketSell() {
     const page = document.getElementById('TicketCounter');
     if (page) {
-        page.scrollIntoView({ behavior: 'smooth' });
+        page.scrollIntoView(
+            { behavior: 'smooth' }
+            );
     }
 }
