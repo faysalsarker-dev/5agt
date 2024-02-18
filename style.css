@@ -21,3 +21,12 @@ main ,.main {
 .line{
     height: 250px;
 }
+hr{
+    border: dashed 1px rgba(96, 94, 94, 0.626);
+}
+
+.dynamic{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
