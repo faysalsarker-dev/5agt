@@ -1,7 +1,7 @@
 .hero-section{
     background-image: url(img/banner.png);
     width: 100%;
-    height: 450px;
+    max-height: 450px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -29,4 +29,25 @@ hr{
     display: flex;
     justify-content: space-between;
     margin: 5px 0;
+}
+.cupon2{
+    
+    background-image: url(img/Rectangle\ 8\ \(2\).png);
+
+}
+.cupon1{
+    background-image: url(img/Rectangle\ 8\ \(1\).png)
+}
+.cupon{
+    
+    width: 100%;
+
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+.devider{
+    height: 175px;
 }

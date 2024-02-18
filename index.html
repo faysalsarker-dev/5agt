@@ -56,27 +56,30 @@
         <!-- Hero section -->
 
         <div
-            class=" hero-section mt-7 flex flex-col justify-center items-center lg:p-30 p-20 lg:space-y-4 space-y-2 relative">
+            class=" hero-section lg:mt-7 flex flex-col  items-center lg:p-30  lg:space-y-4 ">
 
 
-            <h3 class="lg:text-5xl font-extrabold text-4xl  
-            text-white text-center">End-to-End Travel with <br><span
-                    class="lg:text-5xl text-4xl font-extrabold text-[#1DD100] ">P Paribahan</span>
+           <div class="flex justify-center items-center flex-col lg:p-24 p-8">
+
+
+            <h3 class="lg:text-5xl font-extrabold text-xl  
+            text-white text-center m-0">End-to-End Travel with <br><span
+                    class="lg:text-5xl text-xl font-extrabold text-[#1DD100] ">Tourism Paribahan</span>
             </h3>
-            <br>
+            
 
-            <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias
-                quisquam optio! Voluptatibus, nam maiores ex blanditiis illum ratione molestias.</p>
-            <button class="btn bg-[#1DD100] border-0 text-white">Buy Tickets</button>
+            <p class="text-center text-white">Plan youre next trip with us</p>
+            <button class="btn bg-[#1DD100] border-0 text-white text-sm" onclick="TicketSell()">Buy Tickets</button>
 
 
+           </div>
 
 
 
 
         </div>
 
-        <div class="grid grid-cols-3  gap-4 lg:relative lg:-top-12  lg:px-12 px-3 lg:mt-0 mt-4">
+        <div class="grid grid-cols-3  gap-4 lg:relative lg:-top-12 -top-28 lg:px-12 px-3 lg:mt-0 mt-4">
 
             <div class="item bg-white flex flex-col lg:flex-row gap-3 px-5  py-3 rounded-xl">
                 <div class="flex-1 ">
@@ -87,7 +90,7 @@
                     </svg>
                 </div>
                 <div class="flex-1">
-                    <h4 class="font-bold lg:text-4xl text-2xl">500K+</h4>
+                    <h4 class="font-bold lg:text-2xl text-xl">500K+</h4>
                     <p class="font-semibold">register</p>
                 </div>
 
@@ -104,7 +107,7 @@
 
                 </div>
                 <div class="flex-1">
-                    <h4 class="font-bold lg:text-4xl text-2xl">1.7K+</h4>
+                    <h4 class="font-bold lg:text-2xl text-xl">1.7K+</h4>
                     <p class="font-semibold">Sells</p>
                 </div>
 
@@ -120,7 +123,7 @@
                     </svg>
                 </div>
                 <div class="flex-1">
-                    <h4 class="font-bold lg:text-4xl text-2xl">80K+</h4>
+                    <h4 class="font-bold lg:text-2xl text-xl">80K+</h4>
                     <p class="font-semibold">Rental</p>
                 </div>
 
@@ -138,14 +141,43 @@
         <div class="container mt-5 p-14">
 
             <h3 class="text-center text-4xl font-bold">Best offer For you!</h3>
-            <div class="flex gap-10 mt-7 p-5">
-                <div class="flex-1 ">
-                    <img src="img/Group 113.png" alt="">
-                </div>
-                <div class="flex-1">
-                    <img src="img/Group 113.png" alt="">
+            <div class="flex gap-5 mt-7 p-5 flex-col lg:flex-row">
+                <div class="flex-1 cupon cupon1 flex text-[#352C11]  space-y-1 items-center">
+                   <div class="flex-1 px-7">
+
+                    <h3 class="text-3xl font-extrabold">15% OFF</h3>
+                    <p class="font-semibold">On your next purchase</p>
+                    <p class="text-[#816310]">use by 14 February</p>
+
+                   </div>
+                   <img class="devider" src="img/cupon-devider (1).png" alt="">
+                   <div class="p-4 m-4">
+                    <h4 class="text-4xl font-extrabold">NEW15</h4>
+                    <p class="text-[#816310]">Coupon code</p>
+                   </div>
+
+
 
                 </div>
+                
+                    <div class="flex-1 cupon cupon2 flex text-[#352C11]  space-y-1 items-center">
+                        <div class="flex-1 px-7 ">
+
+                            <h3 class="text-3xl font-extrabold">20% OFF</h3>
+                            <p class="font-semibold">On your next purchase</p>
+                            <p class="text-[#816310]">use by 14 February</p>
+        
+                           </div>
+                           <img class="devider" src="img/cupon-devider (1).png" alt="">
+                           <div class="p-4 pl-2 flex flex-col justify-center items-center m-3">
+                            <h4 class="text-3xl font-extrabold">Couple20</h4>
+                            <p class="text-[#816310]">Coupon code</p>
+                           </div>
+        
+        
+        
+                    </div>
+                
             </div>
 
 
@@ -278,7 +310,7 @@
 
 
                 <!-- main function section -->
-                <div class="container flex-1 border-dashed border-r-2 pr-4">
+                <div class="container flex-1 border-dashed border-r-2 pr-4 " id="TicketCounter">
 
                     <div>
                         <h4 class="text-3xl font-bold">Select your Seat</h4>
@@ -317,7 +349,11 @@
                     </div>
                     <hr class="my-4">
 
-                    <div class="w-full flex justify-end">
+
+                    
+
+                    <div class="w-full flex justify-between ">
+                        <p id="alerMsg" class="font-bold"></p>
                         <svg width="110" height="56" viewBox="0 0 110 56" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="110" height="56" rx="12" fill="#030712" fill-opacity="0.1" />
@@ -588,7 +624,7 @@
 
                         <div class="flex justify-between font-bold">
                             <h1>Seat
-                                <span id="totalSelect" class="bg-[#1DD100] px-2 rounded-lg">
+                                <span id="totalSelect" class="bg-[#1DD100] px-2 rounded-lg text-white">
                                     0
                                 </span>
                             </h1>
@@ -627,11 +663,26 @@
 
 
                         </div>
-                        <div class="flex gap-3 my-3">
+                        <div id="DiscountArea" class="  font-semibold text-xl my-4 hidden">
+
+                            <div class="flex justify-between">
+                                <h4>Discount</h4>
+
+                            <h4>BDT
+                                <span id="DiscountPrice">
+                                    0
+                                </span>
+                            </h4>
+
+                            </div>
+
+
+                        </div>
+                        <div id="inputparent" class="flex gap-3 my-3">
 
                             <input id="inputbox" type="text" placeholder="Have any cupon "
                                 class="input input-bordered w-full " />
-                            <button id="applyBtn" class="btn bg-[#1DD100] border-0 text-white" disabled>Apply</button>
+                            <button id="applyBtn" onclick="grantTotal()" class="btn bg-[#1DD100] border-0 text-white" disabled>Apply</button>
                         </div>
 
 
@@ -650,6 +701,9 @@
                         </div>
 
 
+                        <span id="invalidMsg">
+
+                        </span>
 
 
                     </div>
@@ -677,7 +731,7 @@
                                 <span class="label-text font-bold">Phone Number</span>
 
                             </div>
-                            <input type="number" placeholder="Type here" class="input input-bordered w-full " />
+                            <input id="inputNumber" type="number" placeholder="Type here" class="input input-bordered w-full " />
                             <div class="label">
 
                             </div>
@@ -702,7 +756,7 @@
                     </div>
 
                     <div class="flex p-3">
-                        <button class="btn w-full text-white bg-[#1DD100]">Next</button>
+                        <button class="btn w-full text-white bg-[#1DD100]" disabled id="nextBtn">Next</button>
                     </div>
 
                     <div class="flex justify-between font-bold px-3">
@@ -762,7 +816,7 @@
 
 
 
-    <footer class="bg-gray-900 text-white lg:p-32 ">
+    <!-- <footer class="bg-gray-900 text-white lg:p-32 ">
         <div class="container flex lg:flex-row flex-col w-full justify-between ">
             <div>
                 <h4 class="text-4xl font-semibold">Tourism</h4>
@@ -784,7 +838,7 @@
 
 
 
-    </footer>
+    </footer> -->
 
 
 
