@@ -9,6 +9,7 @@ let count = 0;
 
 
 
+
 // for add addEventListener
 for (const btn of comon) {
 
@@ -17,9 +18,6 @@ for (const btn of comon) {
 
 function setboking(event) {
     count++
-
-
-
     event.target.classList.remove('bg-[#F7F8F8]');
     event.target.classList.add('bg-[#1DD100]');
     event.target.classList.add('text-white');
@@ -29,7 +27,6 @@ function setboking(event) {
 
 
     total(count)
-
 
 
     const div = document.createElement('div');
@@ -82,8 +79,27 @@ function setboking(event) {
 
 
     }
+   
 
 }
+
+
+
+
+function btnactive() {
+    const inputNumber = document.getElementById('inputNumber');
+    const inputtext = parseInt(inputNumber.value);
+
+    if (inputtext >= 0 ) {
+        const btn = document.getElementById('nextBtn');
+        btn.removeAttribute('disabled');
+    }
+}
+
+
+
+const inputNumber = document.getElementById('inputNumber');
+inputNumber.addEventListener('keyup', btnactive);
 
 
 
